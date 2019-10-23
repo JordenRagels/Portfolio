@@ -1,193 +1,263 @@
-footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    color: white;
-    text-align: center;
-}
-
-footer p {
-    margin: 0;
-    padding: 0;
-}
-
 body {
-    background-color: #1c313a;
+  background-color: #1c313a;
+  padding: 80px 30px;
+  /* Typewriter Effect*/
+  /* -------------------------- */
 }
 
-.backgroundBody {
-    position: relative;
-    color: lightgrey;
-    margin: 30px;
-    box-shadow: 0px 0px 13px 0px black;
-    padding: 50px;
-    overflow: hidden;
-    border-radius: 4px;
+body h1,
+body h2,
+body h4 {
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  padding: 10px;
+  font-family: 'Noto Serif', serif;
 }
 
-.backgroundBody:before {
-    content: ' ';
-    border-radius: 4px;
-    position: absolute;
-    width: -webkit-fill-available;
-    height: -webkit-fill-available;
-    filter: opacity(.6);
-    top: 0;
-    left: 0;
-    background-image: url("https://us.123rf.com/450wm/popovia/popovia1709/popovia170900016/85496224-blue-stone-pattern-wall-dark-background-or-texture.jpg?ver=6");
+body h1.animation {
+  -webkit-animation: typing 5s steps(40, end), step-end infinite;
+          animation: typing 5s steps(40, end), step-end infinite;
 }
 
-.hero .profile-pic {
-    width: 250px;
-    border-radius: 100%;
-    margin-bottom: 1rem;
-    box-shadow: 0px 0px 30px -8px black;
-    margin: 30px;
+body h3,
+body h5 {
+  padding: 10px;
+  font-family: 'Noto Serif', serif;
 }
 
-
-/* Typewriter Effect*/
-
-h1,
-h2,
-h4 {
-    overflow: hidden;
-    white-space: nowrap;
-    margin: 0 auto;
-    letter-spacing: .15em;
-    animation: typing 5s steps(40, end), step-end infinite;
+body h2 {
+  -webkit-animation: typing3 5s steps(40, end), step-end infinite;
+          animation: typing3 5s steps(40, end), step-end infinite;
 }
 
-h2 {
-    animation: typing3 5s steps(40, end), step-end infinite;
+body h4 {
+  -webkit-animation: typing2 5s steps(40, end), step-end infinite;
+          animation: typing2 5s steps(40, end), step-end infinite;
 }
 
-h4 {
-    animation: typing2 5s steps(40, end), step-end infinite;
+@-webkit-keyframes typing {
+  0% {
+    width: 0%;
+    padding: 0;
+    opacity: 0;
+  }
+  33% {
+    width: 100%;
+    opacity: 1;
+    padding: 10px;
+  }
 }
 
 @keyframes typing {
-    0% {
-        width: 0%;
-    }
-    33% {
-        width: 100%;
-    }
+  0% {
+    width: 0%;
+    padding: 0;
+    opacity: 0;
+  }
+  33% {
+    width: 100%;
+    opacity: 1;
+    padding: 10px;
+  }
+}
+
+@-webkit-keyframes typing2 {
+  33% {
+    width: 0%;
+    opacity: 0;
+    padding: 0;
+  }
+  66% {
+    width: 100%;
+    opacity: 1;
+    padding: 10px;
+  }
 }
 
 @keyframes typing2 {
-    33% {
-        width: 0%;
-    }
-    66% {
-        width: 100%;
-    }
+  33% {
+    width: 0%;
+    opacity: 0;
+    padding: 0;
+  }
+  66% {
+    width: 100%;
+    opacity: 1;
+    padding: 10px;
+  }
+}
+
+@-webkit-keyframes typing3 {
+  66% {
+    width: 0%;
+    opacity: 0;
+    padding: 0;
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
+    padding: 10px;
+  }
 }
 
 @keyframes typing3 {
-    66% {
-        width: 0%;
-    }
-    100% {
-        width: 100%;
-    }
-}
-
-
-/* -------------------------- */
-
-h1,
-h2,
-h4,
-h5 {
-    padding: 10px;
-    font-family: 'Noto Serif', serif;
-}
-
-h5 {
-    opacity: 0.6;
-}
-
-h5:hover {
+  66% {
+    width: 0%;
+    opacity: 0;
+    padding: 0;
+  }
+  100% {
+    width: 100%;
     opacity: 1;
-}
-
-a {
-    color: black;
-}
-
-#contact {
-    text-align: center;
-    background-image: url("https://www.muralswallpaper.com/app/uploads/black-marble-textures-plain-820x532.jpg");
-    color: lightgray;
-    position: relative;
-    margin: 30px;
-    box-shadow: 0px 0px 13px 0px black;
     padding: 10px;
-    overflow: hidden;
-    border-radius: 4px;
-    filter: saturate(20%);
+  }
 }
 
-#contact::after {
-    content: ' ';
-    border-radius: 4px;
-    position: absolute;
-    width: -webkit-fill-available;
-    height: -webkit-fill-available;
-    filter: opacity(.6);
-    top: 0;
-    left: 0;
-    filter: saturate(20%);
+body h5 {
+  opacity: 0.6;
 }
 
-#GGG {
-    position: relative;
-    width: 40%;
-    margin: 20px;
-    pointer-events: all;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column-reverse;
+body h5:hover {
+  opacity: 1;
 }
 
-#GGG img {
-    visibility: hidden;
+body a {
+  color: black;
 }
 
-#GGG * {
-    position: relative;
+body #navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
 }
 
-#GGG:hover {
-    cursor: pointer;
+body #GGG {
+  width: 33%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: -webkit-transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  min-height: 19rem;
+  -webkit-filter: grayscale(30%);
+          filter: grayscale(30%);
+  overflow: hidden;
+  -webkit-box-shadow: 0px 0px 13px 0px black;
+          box-shadow: 0px 0px 13px 0px black;
 }
 
-#GGG:before {
-    content: ' ';
-    border-radius: 4px;
-    position: absolute;
-    width: -webkit-fill-available;
-    height: -webkit-fill-available;
-    background-image: url('./images/IMG_0009.JPG');
-    background-size: cover;
-    box-shadow: 0px 0px 13px 0px black;
-    top: 0;
-    left: 0;
+body #GGG:before {
+  content: '';
+  opacity: 0.75;
+  background-image: url("./images/IMG_0009.JPG");
+  background-color: rgba(10, 10, 50, 0.4);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-filter: grayscale(70%);
+          filter: grayscale(70%);
 }
 
-#GGG:after:hover {
-    cursor: pointer;
-    pointer-events: all;
-    content: ' ';
-    border-radius: 4px;
-    position: absolute;
-    width: -webkit-fill-available;
-    height: -webkit-fill-available;
-    background-size: cover;
-    top: 0;
-    left: 0;
-    z-index: 1000;
+body #GGG:hover {
+  cursor: pointer;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-filter: grayscale(30%);
+          filter: grayscale(30%);
 }
+
+body #GGG:hover:before {
+  cursor: pointer;
+  -webkit-filter: grayscale(10%);
+          filter: grayscale(10%);
+  opacity: 0.9;
+}
+
+body #contact {
+  text-align: center;
+  background-image: url("https://www.muralswallpaper.com/app/uploads/black-marble-textures-plain-820x532.jpg");
+  color: lightgray;
+  position: relative;
+  margin: 30px 0;
+  -webkit-box-shadow: 0px 0px 13px 0px black;
+          box-shadow: 0px 0px 13px 0px black;
+  padding: 10px;
+  overflow: hidden;
+  border-radius: 4px;
+  -webkit-filter: saturate(20%);
+          filter: saturate(20%);
+}
+
+body #contact:after {
+  content: ' ';
+  border-radius: 4px;
+  position: absolute;
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+  -webkit-filter: opacity(0.6);
+          filter: opacity(0.6);
+  top: 0;
+  left: 0;
+  -webkit-filter: saturate(20%);
+          filter: saturate(20%);
+}
+
+body .backgroundBody {
+  position: relative;
+  color: lightgrey;
+  -webkit-box-shadow: 0px 0px 13px 0px black;
+          box-shadow: 0px 0px 13px 0px black;
+  padding: 50px;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+body .backgroundBody:before {
+  content: ' ';
+  border-radius: 4px;
+  position: absolute;
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+  -webkit-filter: opacity(0.6);
+          filter: opacity(0.6);
+  top: 0;
+  left: 0;
+  background-image: url("https://us.123rf.com/450wm/popovia/popovia1709/popovia170900016/85496224-blue-stone-pattern-wall-dark-background-or-texture.jpg?ver=6");
+}
+
+body .backgroundBody .hero .profile-pic {
+  width: 250px;
+  border-radius: 100%;
+  margin-bottom: 1rem;
+  -webkit-box-shadow: 0px 0px 30px -8px black;
+          box-shadow: 0px 0px 30px -8px black;
+  margin: 30px;
+}
+
+body footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+body footer p {
+  margin: 0;
+  padding: 0;
+}
+/*# sourceMappingURL=style.css.map */
