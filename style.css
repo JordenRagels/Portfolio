@@ -65,6 +65,11 @@ body #navbar:after {
   opacity: 0.6;
 }
 
+body #navbar * > * {
+  position: relative;
+  z-index: 1001;
+}
+
 body section {
   position: relative;
   height: 75vh;

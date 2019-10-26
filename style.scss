@@ -55,6 +55,10 @@ body {
             height: -webkit-fill-available;
             opacity: 0.6;
         }
+        *>* {
+            position: relative;
+            z-index: 1001;
+        }
     }
     section {
         position: relative;
