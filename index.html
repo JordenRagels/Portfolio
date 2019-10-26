@@ -41,19 +41,15 @@
     </div>
 
     <div class="backgroundBody">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-4 hero">
-                    <img src="images/profile pic.jpg" alt="profile picture" class="profile-pic">
-                </div>
-                <div class="col-lg-8">
-                    <h1 class="animation">Jorden Ragels</h1>
-                    <h4 class="animation">Full-stack developer</h4>
-                    <h2 class="animation">About Me</h2>
-                    <h5>Full Stack Web Developer with proficiency in the MERN tech stack and a mobile-first design pattern. Known to take the initiative in learning and problem solving, I am driven to promote a work environment that values creativity, transparency
-                        and constant improvement. My technical skills and emotional intelligence guarantees an asset to any team.</h5>
-                </div>
-            </div>
+        <div class="hero">
+            <img src="images/profile pic.jpg" alt="profile picture" class="profile-pic">
+        </div>
+        <div class="animation">
+            <h1>Jorden Ragels</h1>
+            <h4>Full-stack developer</h4>
+            <h2>About Me</h2>
+            <h5>Full Stack Web Developer with proficiency in the MERN tech stack and a mobile-first design pattern. Known to take the initiative in learning and problem solving, I am driven to promote a work environment that values creativity, transparency
+                and constant improvement. My technical skills and emotional intelligence guarantees an asset to any team.</h5>
         </div>
     </div>
 
@@ -65,16 +61,20 @@
 
 
     <h4 id="one"></h4>
-    <a id="GGG" class="card bg-dark text-white">
-        <img src="images/IMG_0009.JPG" class="card-img" alt="...">
-        <div class="card-img-overlay">
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text">Last updated 3 mins ago</p>
-        </div>
-    </a>
+    <section class="cards-section">
+        <a id="GGG" class="card bg-dark text-white" href="https://www.instagram.com/a_girls_guide_to_gadgets/">
+            <p class="card-text">A place I hope to connect and inspire others to learn how to code. As well, I hope to further my own education here through the online community.</p>
+        </a>
+        <div class="tile vertical" onclick='window.location.href="https://github.com/JordenRagels/unit-4-game";'></div>
+        <acticle class="tile group">
+            <div class="tile half" onclick='window.location.href="https://github.com/JordenRagels/project-one";'></div>
+            <div class="tile half" onclick='window.location.href="https://github.com/JordenRagels/Word-Guess-Game";'></div>
+        </acticle>
+
+    </section>
 
 
-    <div id="contact" class="card">
+    <div id="contact">
         <div class="card-header">
             <h3>Contact Me</h3>
         </div>
@@ -85,35 +85,26 @@
             </blockquote>
         </div>
     </div>
-
-
-
-
-
-
-
-
-
     <footer class="footer bg-dark text-center">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <p>
+                    <p class="links">
 
                         <!-- STILL NEEDS TO BE FINISHED DO NOT FORGET-->
-                        <ion-icon name="logo-github"></ion-icon>
-                        <ion-icon name="logo-linkedin"></ion-icon>
-                        <ion-icon name="logo-instagram"></ion-icon>
+                        <ion-icon onclick=' window.location.href="https://github.com/JordenRagels" ; ' name="logo-github"></ion-icon>
+                        <ion-icon onclick='window.location.href="https://www.linkedin.com/in/jorden-ragels-6546ab185/" ; ' name="logo-linkedin"></ion-icon>
+                        <ion-icon onclick='window.location.href="https://www.instagram.com/a_girls_guide_to_gadgets/" ; ' name="logo-instagram"></ion-icon>
                     </p>
                 </div>
             </div>
         </div>
-    </footer>
+        </f ooter>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="javascript.js" rel="javascript"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="javascript.js" rel="javascript"></script>
 
 
 </body>

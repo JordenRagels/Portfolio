@@ -1,193 +1,290 @@
+@import "./scss/index.scss";
+a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
 body {
-	background-color: #1c313a;
-	padding: 80px 30px;
-	/* Typewriter Effect*/
-
-	h1,
-	h2,
-	h4 {
-		overflow: hidden;
-		white-space: nowrap;
-		margin: 0 auto;
-		letter-spacing: 0.15em;
-		padding: 10px;
-		font-family: 'Noto Serif', serif;
+    background-color: rgba(59, 78, 87, 0.966);
+    padding-top: 80px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    /* Typewriter Effect*/
+    h1,
+    h2,
+    h4 {
+        overflow: hidden;
+        white-space: nowrap;
+        margin: 0 auto;
+        letter-spacing: 0.15em;
+        padding: 10px;
+        font-family: "Noto Serif", serif;
     }
-    h1 {
-        &.animation {
-			animation: typing 5s steps(40, end), step-end infinite;
-		}
+    h3,
+    h5 {
+        padding: 10px;
+        font-family: "Noto Serif", serif;
     }
-	h3,
-	h5 {
-		padding: 10px;
-		font-family: 'Noto Serif', serif;
-	}
-
-	h2 {
-		animation: typing3 5s steps(40, end), step-end infinite;
-	}
-
-	h4 {
-		animation: typing2 5s steps(40, end), step-end infinite;
-	}
-
-	@keyframes typing {
-		0% {
-			width: 0%;
-			padding: 0;
-			opacity: 0;
-		}
-		33% {
-			width: 100%;
-			opacity: 1;
-			padding: 10px;
-		}
-	}
-
-	@keyframes typing2 {
-		33% {
-			width: 0%;
-			opacity: 0;
-			padding: 0;
-		}
-		66% {
-			width: 100%;
-			opacity: 1;
-			padding: 10px;
-		}
-	}
-
-	@keyframes typing3 {
-		66% {
-			width: 0%;
-			opacity: 0;
-			padding: 0;
-		}
-		100% {
-			width: 100%;
-			opacity: 1;
-			padding: 10px;
-		}
-	}
-
-	/* -------------------------- */
-
-	h5 {
-		opacity: 0.6;
-		&:hover {
-			opacity: 1;
-		}
-	}
-	a {
-		color: black;
+    /* -------------------------- */
+    h5 {
+        opacity: 0.6;
+        &:hover {
+            opacity: 1;
+        }
+    }
+    a {
+        color: black;
     }
     #navbar {
         position: fixed;
-        top:0;
-        left:0;
-        right:0;
+        top: 0;
+        left: 0;
+        right: 0;
         z-index: 1000;
+        opacity: 0.8;
+        &:after {
+            content: " ";
+            position: absolute;
+            z-index: 999;
+            left: 0;
+            top: 0;
+            width: -webkit-fill-available;
+            height: -webkit-fill-available;
+            opacity: 0.6;
+        }
     }
-	#GGG {
-		width: 33%;
-		position: relative;
-		display: flex;
-		transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-		min-height: 19rem;
-		filter: grayscale(30%);
-        overflow: hidden;
-        box-shadow: 0px 0px 13px 0px black;
-		&:before {
-			content: '';
-			opacity: 0.75;
-			background-image: url('./images/IMG_0009.JPG');
-			background-color: rgba(10, 10, 50, 0.4);
-			background-position: center;
-			background-repeat: no-repeat;
-			background-size: cover;
-			position: absolute;
-			z-index: -1;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			filter: grayscale(70%);
-		}
-		&:hover {
-			&:before {
-                cursor:pointer;
-				filter: grayscale(10%);
-				opacity: 0.9;
+    section {
+        position: relative;
+        height: 75vh;
+        width: 100vw;
+        &.cards-section {
+            display: flex;
+            justify-content: space-evenly;
+            width: -webkit-fill-available;
+            min-height: -webkit-fill-available;
+            align-items: center;
+            flex-wrap: nowrap;
+            #GGG {
+                display: flex;
+                flex-basis: 33%;
+                width: 33%;
+                position: relative;
+                display: flex;
+                transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                height: 100%;
+                padding: 1.5rem;
+                overflow: hidden;
+                box-shadow: $box-shadow-main;
+                &:before {
+                    content: " ";
+                    opacity: 0.75;
+                    background-image: url("./images/section_card_bg1.JPG");
+                    background-position: center;
+                    backface-visibility: hidden;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    position: absolute;
+                    z-index: 0;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    filter: grayscale(15%);
+                }
+                &:hover {
+                    &:before {
+                        cursor: pointer;
+                        filter: grayscale(10%);
+                        opacity: 0.9;
+                    }
+                    cursor: pointer;
+                    transform: translateY(-5px);
+                    filter: grayscale(5%);
+                    p {
+                        color: rgba(221, 230, 235, 0.85);
+                    }
+                }
+                p {
+                    position: relative;
+                    color: rgba(170, 199, 212, 0.671);
+                }
             }
-            cursor:pointer;
-			transform: translateY(-5px);
-			filter: grayscale(30%);
-		}
-	}
-	#contact {
-		text-align: center;
-		background-image: url('https://www.muralswallpaper.com/app/uploads/black-marble-textures-plain-820x532.jpg');
-		color: lightgray;
-		position: relative;
-		margin: 30px 0;
-		box-shadow: 0px 0px 13px 0px black;
-		padding: 10px;
-		overflow: hidden;
-		border-radius: 4px;
-		filter: saturate(20%);
-		&:after {
-			content: ' ';
-			border-radius: 4px;
-			position: absolute;
-			width: -webkit-fill-available;
-			height: -webkit-fill-available;
-			filter: opacity(0.6);
-			top: 0;
-			left: 0;
-			filter: saturate(20%);
-		}
-	}
-
-	.backgroundBody {
-		position: relative;
-		color: lightgrey;
-		box-shadow: 0px 0px 13px 0px black;
-		padding: 50px;
-		overflow: hidden;
-		border-radius: 4px;
-		&:before {
-			content: ' ';
-			border-radius: 4px;
-			position: absolute;
-			width: -webkit-fill-available;
-			height: -webkit-fill-available;
-			filter: opacity(0.6);
-			top: 0;
-			left: 0;
-			background-image: url('https://us.123rf.com/450wm/popovia/popovia1709/popovia170900016/85496224-blue-stone-pattern-wall-dark-background-or-texture.jpg?ver=6');
-		}
-
-		.hero {
-			.profile-pic {
-				width: 250px;
-				border-radius: 100%;
-				margin-bottom: 1rem;
-				box-shadow: 0px 0px 30px -8px black;
-				margin: 30px;
-			}
-		}
-	}
-	footer {
-		position: fixed;
-		left: 0;
-		bottom: 0;
-		width: 100%;
-		color: white;
-		text-align: center;
-		p {
-			margin: 0;
-			padding: 0;
-		}
-	}
+            .tile {
+                opacity: .75;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: -webkit-fill-available;
+                border-radius: 4px;
+                background-size: cover;
+                background-position: center;
+                transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                &.group {
+                    flex-basis: 22%;
+                    flex-direction: column;
+                    align-items: center;
+                    width: -webkit-fill-available;
+                    height: 100%;
+                    background-color: transparent;
+                }
+                &.vertical {
+                    height: 100%;
+                    flex-basis: 40%;
+                    background-image: url('./images/section_card_bg2.JPG');
+                }
+                &.half {
+                    box-shadow: $box-shadow-main;
+                    display: inline-flex;
+                    height: calc(50% - .5rem);
+                    background-image: url('./images/section_card_bg3.JPG');
+                    &:nth-child(2n) {
+                        background-image: url('./images/section_card_bg4.JPG');
+                    }
+                }
+                &:hover {
+                    opacity: .95;
+                    transform: translateY(-5px);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    #contact {
+        text-align: center;
+        color: rgba(233, 243, 243, 0.973);
+        position: relative;
+        margin-top: 30px;
+        padding: 10px;
+        opacity: 0.7;
+        transition: animation opacity 4ms ease-in;
+        &:after,
+        &:before {
+            content: " ";
+            border-radius: 4px;
+            position: absolute;
+            background-image: url("https://www.muralswallpaper.com/app/uploads/black-marble-textures-plain-820x532.jpg");
+            backface-visibility: hidden;
+            overflow: hidden;
+            width: -webkit-fill-available;
+            height: -webkit-fill-available;
+            box-shadow: $box-shadow-main;
+            opacity: 0.7;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            filter: saturate(20%);
+        }
+        &:hover {
+            opacity: 0.9;
+        }
+        div,
+        div>* {
+            position: relative;
+        }
+    }
+    .backgroundBody {
+        position: relative;
+        color: rgba(233, 243, 243, 0.952);
+        box-shadow: $box-shadow-main;
+        padding: 50px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        overflow: hidden;
+        border-radius: 4px;
+        &:before {
+            content: " ";
+            border-radius: 4px;
+            position: absolute;
+            width: -webkit-fill-available;
+            height: -webkit-fill-available;
+            filter: opacity(0.5);
+            top: 0;
+            left: 0;
+            background-image: url("https://us.123rf.com/450wm/popovia/popovia1709/popovia170900016/85496224-blue-stone-pattern-wall-dark-background-or-texture.jpg?ver=6");
+        }
+        .hero {
+            position: relative;
+            .profile-pic {
+                width: 250px;
+                border-radius: 100%;
+                margin-bottom: 1rem;
+                box-shadow: 0px 0px 30px -8px black;
+                margin: 30px;
+            }
+        }
+        .animation {
+            position: relative;
+            h1 {
+                animation: typing 5s steps(40, end), step-end infinite;
+                @keyframes typing {
+                    0% {
+                        width: 0%;
+                        padding: 0;
+                        opacity: 0;
+                    }
+                    33% {
+                        width: 100%;
+                        opacity: 1;
+                        padding: 10px;
+                    }
+                }
+            }
+            h2 {
+                animation: typing3 5s steps(40, end), step-end infinite;
+                @keyframes typing3 {
+                    66% {
+                        width: 0%;
+                        opacity: 0;
+                        padding: 0;
+                    }
+                    100% {
+                        width: 100%;
+                        opacity: 1;
+                        padding: 10px;
+                    }
+                }
+            }
+            h4 {
+                animation: typing2 5s steps(40, end), step-end infinite;
+                @keyframes typing2 {
+                    33% {
+                        width: 0%;
+                        opacity: 0;
+                        padding: 0;
+                    }
+                    66% {
+                        width: 100%;
+                        opacity: 1;
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        color: white;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p {
+            position: relative;
+            margin: 0;
+            padding: 0;
+            &.links>* {
+                position: relative;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
 }
