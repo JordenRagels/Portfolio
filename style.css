@@ -1,443 +1,439 @@
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 body {
-    background-image: url("images/Terror_1200_01.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    padding-top: 80px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 50px;
-    /* Typewriter Effect*/
-    /* -------------------------- */
+  background-image: url("images/Terror_1200_01.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding-top: 80px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  /* Typewriter Effect*/
+  /* -------------------------- */
 }
 
 body h1,
 body h2,
 body h4 {
-    overflow: hidden;
-    white-space: nowrap;
-    margin: 0 auto;
-    letter-spacing: 0.15em;
-    padding: 10px;
-    font-family: "Noto Serif", serif;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  padding: 10px;
+  font-family: "Noto Serif", serif;
 }
 
 body h3,
 body h5 {
-    padding: 10px;
-    font-family: "Noto Serif", serif;
+  padding: 10px;
+  font-family: "Noto Serif", serif;
 }
 
 body h5 {
-    opacity: 0.6;
+  opacity: 0.6;
 }
 
 body h5:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 body a {
-    color: black;
+  color: black;
 }
 
 body #navbar {
-    font-family: 'Merienda', cursive;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    opacity: 0.8;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  opacity: 0.8;
 }
 
 body #navbar:after {
-    content: " ";
-    position: absolute;
-    z-index: 999;
-    left: 0;
-    top: 0;
-    width: -webkit-fill-available;
-    height: -webkit-fill-available;
-    opacity: 0.6;
+  content: " ";
+  position: absolute;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+  opacity: 0.6;
 }
 
-body #navbar *>* {
-    position: relative;
-    z-index: 1001;
+body #navbar * > * {
+  position: relative;
+  z-index: 1001;
 }
 
 body section {
-    position: relative;
-    height: 75vh;
-    width: 100vw;
+  position: relative;
+  height: 75vh;
+  width: 100vw;
 }
 
 body section.cards-section {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: space-evenly;
-    -ms-flex-pack: space-evenly;
-    justify-content: space-evenly;
-    width: -webkit-fill-available;
-    min-height: -webkit-fill-available;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: -webkit-fill-available;
+  min-height: -webkit-fill-available;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 body section.cards-section #GGG {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-preferred-size: 33%;
-    flex-basis: 33%;
-    width: 33%;
-    position: relative;
-    display: flex;
-    -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    transition: -webkit-transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    height: 100%;
-    padding: 1.5rem;
-    overflow: hidden;
-    -webkit-box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+  width: 33%;
+  position: relative;
+  display: flex;
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: -webkit-transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  height: 100%;
+  padding: 1.5rem;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
 body section.cards-section #GGG:before {
-    content: " ";
-    opacity: 0.75;
-    background-image: url("./images/section_card_bg1.JPG");
-    background-position: center;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    z-index: 0;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    -webkit-filter: grayscale(15%);
-    filter: grayscale(15%);
+  content: " ";
+  opacity: 0.75;
+  background-image: url("./images/section_card_bg1.JPG");
+  background-position: center;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-filter: grayscale(15%);
+          filter: grayscale(15%);
 }
 
 body section.cards-section #GGG:hover {
-    cursor: pointer;
-    -webkit-transform: translateY(-5px);
-    transform: translateY(-5px);
-    -webkit-filter: grayscale(5%);
-    filter: grayscale(5%);
+  cursor: pointer;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-filter: grayscale(5%);
+          filter: grayscale(5%);
 }
 
 body section.cards-section #GGG:hover:before {
-    cursor: pointer;
-    -webkit-filter: grayscale(10%);
-    filter: grayscale(10%);
-    opacity: 0.9;
+  cursor: pointer;
+  -webkit-filter: grayscale(10%);
+          filter: grayscale(10%);
+  opacity: 0.9;
 }
 
 body section.cards-section #GGG:hover p {
-    color: rgba(221, 230, 235, 0.85);
+  color: rgba(221, 230, 235, 0.85);
 }
 
 body section.cards-section #GGG p {
-    position: relative;
-    color: rgba(170, 199, 212, 0.671);
+  position: relative;
+  color: rgba(170, 199, 212, 0.671);
 }
 
 body section.cards-section .tile {
-    opacity: .75;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    width: -webkit-fill-available;
-    border-radius: 4px;
-    background-size: cover;
-    background-position: center;
-    -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    transition: -webkit-transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  opacity: .75;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-fill-available;
+  border-radius: 4px;
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: -webkit-transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 body section.cards-section .tile.group {
-    -ms-flex-preferred-size: 22%;
-    flex-basis: 22%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    width: -webkit-fill-available;
-    height: 100%;
-    background-color: transparent;
+  -ms-flex-preferred-size: 22%;
+      flex-basis: 22%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-fill-available;
+  height: 100%;
+  background-color: transparent;
 }
 
 body section.cards-section .tile.vertical {
-    height: 100%;
-    -ms-flex-preferred-size: 40%;
-    flex-basis: 40%;
-    background-image: url("./images/section_card_bg2.JPG");
+  height: 100%;
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  background-image: url("./images/section_card_bg2.JPG");
 }
 
 body section.cards-section .tile.half {
-    -webkit-box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    height: calc(50% - .5rem);
-    background-image: url("./images/section_card_bg3.JPG");
+  -webkit-box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: calc(50% - .5rem);
+  background-image: url("./images/section_card_bg3.JPG");
 }
 
 body section.cards-section .tile.half:nth-child(2n) {
-    background-image: url("./images/section_card_bg4.JPG");
+  background-image: url("./images/section_card_bg4.JPG");
 }
 
 body section.cards-section .tile:hover {
-    opacity: .95;
-    -webkit-transform: translateY(-5px);
-    transform: translateY(-5px);
-    cursor: pointer;
+  opacity: .95;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  cursor: pointer;
 }
 
 body #contact {
-    text-align: center;
-    color: rgba(233, 243, 243, 0.973);
-    position: relative;
-    margin-top: 30px;
-    padding: 10px;
-    opacity: 0.7;
-    -webkit-transition: -webkit-animation opacity 4ms ease-in;
-    transition: -webkit-animation opacity 4ms ease-in;
-    transition: animation opacity 4ms ease-in;
-    transition: animation opacity 4ms ease-in, -webkit-animation opacity 4ms ease-in;
+  text-align: center;
+  color: rgba(233, 243, 243, 0.973);
+  position: relative;
+  margin-top: 30px;
+  padding: 10px;
+  opacity: 0.7;
+  -webkit-transition: -webkit-animation opacity 4ms ease-in;
+  transition: -webkit-animation opacity 4ms ease-in;
+  transition: animation opacity 4ms ease-in;
+  transition: animation opacity 4ms ease-in, -webkit-animation opacity 4ms ease-in;
 }
 
-body #contact:after,
-body #contact:before {
-    content: " ";
-    border-radius: 4px;
-    position: absolute;
-    background-image: url("https://www.muralswallpaper.com/app/uploads/black-marble-textures-plain-820x532.jpg");
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    overflow: hidden;
-    width: -webkit-fill-available;
-    height: -webkit-fill-available;
-    -webkit-box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-    opacity: 0.7;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    -webkit-filter: saturate(20%);
-    filter: saturate(20%);
+body #contact:after, body #contact:before {
+  content: " ";
+  border-radius: 4px;
+  position: absolute;
+  background-image: url("https://www.muralswallpaper.com/app/uploads/black-marble-textures-plain-820x532.jpg");
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  overflow: hidden;
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+  -webkit-box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  opacity: 0.7;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  -webkit-filter: saturate(20%);
+          filter: saturate(20%);
 }
 
 body #contact:hover {
-    opacity: 0.9;
+  opacity: 0.9;
 }
 
 body #contact div,
-body #contact div>* {
-    position: relative;
+body #contact div > * {
+  position: relative;
 }
 
 body .backgroundBody {
-    position: relative;
-    color: rgba(233, 243, 243, 0.952);
-    -webkit-box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-    padding: 50px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: space-evenly;
-    -ms-flex-pack: space-evenly;
-    justify-content: space-evenly;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    overflow: hidden;
-    border-radius: 4px;
+  position: relative;
+  color: rgba(233, 243, 243, 0.952);
+  -webkit-box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  border-radius: 4px;
 }
 
 body .backgroundBody:before {
-    content: " ";
-    border-radius: 4px;
-    position: absolute;
-    width: -webkit-fill-available;
-    height: -webkit-fill-available;
-    -webkit-filter: opacity(0.5);
-    filter: opacity(0.5);
-    top: 0;
-    left: 0;
-    background-image: url("https://us.123rf.com/450wm/popovia/popovia1709/popovia170900016/85496224-blue-stone-pattern-wall-dark-background-or-texture.jpg?ver=6");
+  content: " ";
+  border-radius: 4px;
+  position: absolute;
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+  -webkit-filter: opacity(0.5);
+          filter: opacity(0.5);
+  top: 0;
+  left: 0;
+  background-image: url("https://us.123rf.com/450wm/popovia/popovia1709/popovia170900016/85496224-blue-stone-pattern-wall-dark-background-or-texture.jpg?ver=6");
 }
 
 body .backgroundBody .hero {
-    position: relative;
+  position: relative;
 }
 
 body .backgroundBody .hero .profile-pic {
-    width: 250px;
-    border-radius: 100%;
-    margin-bottom: 1rem;
-    -webkit-box-shadow: 0px 0px 30px -8px black;
-    box-shadow: 0px 0px 30px -8px black;
-    margin: 30px;
+  width: 250px;
+  border-radius: 100%;
+  margin-bottom: 1rem;
+  -webkit-box-shadow: 0px 0px 30px -8px black;
+          box-shadow: 0px 0px 30px -8px black;
+  margin: 30px;
 }
 
 body .backgroundBody .animation {
-    position: relative;
+  position: relative;
 }
 
 body .backgroundBody .animation h1 {
-    -webkit-animation: typing 5s steps(40, end), step-end infinite;
-    animation: typing 5s steps(40, end), step-end infinite;
+  -webkit-animation: typing 5s steps(40, end), step-end infinite;
+          animation: typing 5s steps(40, end), step-end infinite;
 }
 
 @-webkit-keyframes typing {
-    0% {
-        width: 0%;
-        padding: 0;
-        opacity: 0;
-    }
-    33% {
-        width: 100%;
-        opacity: 1;
-        padding: 10px;
-    }
+  0% {
+    width: 0%;
+    padding: 0;
+    opacity: 0;
+  }
+  33% {
+    width: 100%;
+    opacity: 1;
+    padding: 10px;
+  }
 }
 
 @keyframes typing {
-    0% {
-        width: 0%;
-        padding: 0;
-        opacity: 0;
-    }
-    33% {
-        width: 100%;
-        opacity: 1;
-        padding: 10px;
-    }
+  0% {
+    width: 0%;
+    padding: 0;
+    opacity: 0;
+  }
+  33% {
+    width: 100%;
+    opacity: 1;
+    padding: 10px;
+  }
 }
 
 body .backgroundBody .animation h2 {
-    -webkit-animation: typing3 5s steps(40, end), step-end infinite;
-    animation: typing3 5s steps(40, end), step-end infinite;
+  -webkit-animation: typing3 5s steps(40, end), step-end infinite;
+          animation: typing3 5s steps(40, end), step-end infinite;
 }
 
 @-webkit-keyframes typing3 {
-    66% {
-        width: 0%;
-        opacity: 0;
-        padding: 0;
-    }
-    100% {
-        width: 100%;
-        opacity: 1;
-        padding: 10px;
-    }
+  66% {
+    width: 0%;
+    opacity: 0;
+    padding: 0;
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
+    padding: 10px;
+  }
 }
 
 @keyframes typing3 {
-    66% {
-        width: 0%;
-        opacity: 0;
-        padding: 0;
-    }
-    100% {
-        width: 100%;
-        opacity: 1;
-        padding: 10px;
-    }
+  66% {
+    width: 0%;
+    opacity: 0;
+    padding: 0;
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
+    padding: 10px;
+  }
 }
 
 body .backgroundBody .animation h4 {
-    -webkit-animation: typing2 5s steps(40, end), step-end infinite;
-    animation: typing2 5s steps(40, end), step-end infinite;
+  -webkit-animation: typing2 5s steps(40, end), step-end infinite;
+          animation: typing2 5s steps(40, end), step-end infinite;
 }
 
 @-webkit-keyframes typing2 {
-    33% {
-        width: 0%;
-        opacity: 0;
-        padding: 0;
-    }
-    66% {
-        width: 100%;
-        opacity: 1;
-        padding: 10px;
-    }
+  33% {
+    width: 0%;
+    opacity: 0;
+    padding: 0;
+  }
+  66% {
+    width: 100%;
+    opacity: 1;
+    padding: 10px;
+  }
 }
 
 @keyframes typing2 {
-    33% {
-        width: 0%;
-        opacity: 0;
-        padding: 0;
-    }
-    66% {
-        width: 100%;
-        opacity: 1;
-        padding: 10px;
-    }
+  33% {
+    width: 0%;
+    opacity: 0;
+    padding: 0;
+  }
+  66% {
+    width: 100%;
+    opacity: 1;
+    padding: 10px;
+  }
 }
 
 body footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    color: white;
-    text-align: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body footer p {
-    position: relative;
-    margin: 0;
-    padding: 0;
+  position: relative;
+  margin: 0;
+  padding: 0;
 }
 
-body footer p.links>* {
-    position: relative;
+body footer p.links > * {
+  position: relative;
 }
 
-body footer p.links>*:hover {
-    cursor: pointer;
+body footer p.links > *:hover {
+  cursor: pointer;
 }
-
-
 /*# sourceMappingURL=style.css.map */
